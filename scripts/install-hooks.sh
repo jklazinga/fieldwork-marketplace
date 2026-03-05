@@ -4,19 +4,18 @@
 
 HOOKS_DIR=".git/hooks"
 
-cat > "$HOOKS_DIR/post-commit" << 'EOF'
+cat > "$HOOKS_DIR/pre-commit" << 'EOF'
 #!/bin/sh
-# Auto-update version to current git SHA after every commit.
+# Stamp version with current HEAD SHA before each commit.
+# Version will reflect the previous commit — stable and loop-free.
 SHA=$(git rev-parse --short HEAD)
 PLUGIN_JSON=".claude-plugin/plugin.json"
 MARKETPLACE_JSON=".claude-plugin/marketplace.json"
 
 sed -i "s/\"version\": \"[^\"]*\"/\"version\": \"$SHA\"/g" "$PLUGIN_JSON"
 sed -i "s/\"version\": \"[^\"]*\"/\"version\": \"$SHA\"/g" "$MARKETPLACE_JSON"
-
 git add "$PLUGIN_JSON" "$MARKETPLACE_JSON"
-git commit --amend --no-edit --no-verify -q
 EOF
 
-chmod +x "$HOOKS_DIR/post-commit"
+chmod +x "$HOOKS_DIR/pre-commit"
 echo "Hooks installed."
