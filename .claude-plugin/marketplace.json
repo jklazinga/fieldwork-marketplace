@@ -1,0 +1,23 @@
+{
+  "name": "fieldwork-marketplace",
+  "owner": {
+    "name": "Josh Klazinga",
+    "email": "josh@klazinga.com"
+  },
+  "metadata": {
+    "description": "PM-native skills framework for AI coding agents",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "fieldwork",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jklazinga/fieldwork.git"
+      },
+      "description": "PM-native skills framework for AI coding agents. Discovery, spec, GTM, marketing, launch, and retro.",
+      "version": "0.2.0",
+      "strict": true
+    }
+  ]
+}
