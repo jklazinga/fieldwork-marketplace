@@ -11,6 +11,7 @@
   "plugins": [
     {
       "name": "fieldwork",
+      "version": "0.2.0",
       "description": "PM-native skills framework for AI coding agents. Discovery, spec, GTM, marketing, launch, and retro.",
       "author": {
         "name": "Josh Klazinga",
