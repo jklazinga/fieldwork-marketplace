@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "PM-native skills framework for AI coding agents",
-    "version": "1.0.3"
+    "version": "1.0.4"
   },
   "plugins": [
     {
@@ -16,7 +16,10 @@
         "name": "Josh Klazinga",
         "email": "josh@klazinga.com"
       },
-      "source": "./plugins/fieldwork",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jklazinga/fieldwork.git"
+      },
       "category": "productivity",
       "homepage": "https://github.com/jklazinga/fieldwork"
     }
