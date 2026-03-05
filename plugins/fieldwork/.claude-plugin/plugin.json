@@ -18,6 +18,5 @@
     "launch",
     "skills",
     "workflows"
-  ],
-  "hooks": "./hooks/hooks.json"
+  ]
 }
