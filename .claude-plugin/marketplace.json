@@ -11,12 +11,16 @@
   "plugins": [
     {
       "name": "fieldwork",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/jklazinga/fieldwork.git"
-      },
+      "source": "./",
       "description": "PM-native skills framework for AI coding agents. Discovery, spec, GTM, marketing, launch, and retro.",
       "version": "0.2.0",
+      "keywords": ["pm", "product-management", "discovery", "spec", "gtm", "launch", "skills", "workflows"],
+      "author": {
+        "name": "Josh Klazinga",
+        "email": "josh@klazinga.com"
+      },
+      "homepage": "https://github.com/jklazinga/fieldwork",
+      "license": "MIT",
       "strict": true
     }
   ]
