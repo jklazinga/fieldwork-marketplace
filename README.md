@@ -21,7 +21,7 @@ Because the skills trigger automatically, you don't need to do anything special.
 Run these inside any Claude Code session:
 
 ```
-/plugin marketplace add https://github.com/jklazinga/fieldwork
+/plugin marketplace add jklazinga/fieldwork-marketplace
 /plugin install fieldwork@fieldwork-marketplace
 ```
 
