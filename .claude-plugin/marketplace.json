@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "PM-native skills framework for AI coding agents",
-    "version": "1.0.4"
+    "version": "179595c"
   },
   "plugins": [
     {
@@ -16,7 +16,7 @@
         "url": "https://github.com/jklazinga/fieldwork.git"
       },
       "description": "PM-native skills framework for AI coding agents. Discovery, spec, GTM, marketing, launch, and retro.",
-      "version": "0.2.0",
+      "version": "179595c",
       "strict": true
     }
   ]
