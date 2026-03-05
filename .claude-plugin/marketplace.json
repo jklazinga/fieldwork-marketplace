@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "fieldwork",
-      "source": "./",
+      "source": "./plugins/fieldwork",
       "description": "PM-native skills framework for AI coding agents. Discovery, spec, GTM, marketing, launch, and retro.",
       "version": "0.2.1",
       "keywords": ["pm", "product-management", "discovery", "spec", "gtm", "launch", "skills", "workflows"],
