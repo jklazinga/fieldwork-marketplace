@@ -6,7 +6,7 @@ It starts before any code gets written. When you describe a new idea, Fieldwork 
 
 Once you've validated the opportunity, it helps you write a spec grounded in your real product context: your users, your OKRs, your constraints. Not a generic template. A spec that reflects what you actually know.
 
-After the spec is approved, Fieldwork hands off to engineering. The approved spec is the input to [Superpowers](https://github.com/obra/superpowers) `executing-plans`, so your agent can go from PM-approved spec to working code without losing context.
+After the spec is approved, Fieldwork hands off to engineering. The approved plan is the execution brief — hand it to Claude Code directly, scaffold it into tracked tasks, or feed it into a tool like Superpowers if you use one.
 
 GTM, launch briefs, and retros are built into the same workflow. Shipping isn't done when the code merges.
 
@@ -98,7 +98,7 @@ Same as Feature — no steps skipped.
 
 5. **review-spec** - Activates after the spec is drafted. Reviews for gaps, contradictions, and missing edge cases. Asks: does this spec give us a real shot at the outcome we predicted in discovery? Flags issues before they become rework.
 
-6. **write-plan** - Activates after spec approval. Produces a sequenced implementation plan grounded in the actual codebase. Superpowers-compatible output.
+6. **write-plan** - Activates after spec approval. Produces a sequenced implementation plan grounded in the actual codebase.
 
 7. **scaffold-tasks** - Activates after plan approval. Creates tracked tasks in GitHub Issues, Linear, or a local task file. MCP-aware — checks what's available before attempting any calls.
 
@@ -124,7 +124,7 @@ Same as Feature — no steps skipped.
 - **review-spec** - Spec review for gaps and edge cases
 
 ### Engineering handoff
-- **write-plan** - Implementation plan (Superpowers-compatible)
+- **write-plan** - Implementation plan
 - **scaffold-tasks** - GitHub Issues, Linear tickets, or task file
 
 ### Go-to-market
@@ -157,7 +157,7 @@ Templates are in `context/`.
 ## Integrations
 
 ### Superpowers
-After `write-plan` completes, hand the `prompt_plan.md` to an agent running Superpowers `executing-plans`. The format is compatible. Superpowers handles TDD, git workflow, and code review from there.
+If you use [Superpowers](https://github.com/obra/superpowers), the plan output from `write-plan` is compatible with `superpowers:executing-plans`. This is optional — you can work from the plan file directly or scaffold tasks without it.
 
 ---
 
