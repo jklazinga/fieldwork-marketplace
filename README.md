@@ -1,3 +1,5 @@
+![Fieldwork](assets/fieldwork-banner.png)
+
 # Fieldwork
 
 AI coding agents are good at building. They are not good at deciding what to build, writing specs that hold up, or knowing when a feature is actually done.
